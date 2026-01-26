@@ -30,7 +30,7 @@ export function BookCard({ book }: BookCardProps) {
   const status = statusConfig[book.contentStatus] || { label: book.contentStatus, className: 'badge-glass bg-[rgba(113,113,122,0.15)] text-[var(--gray-500)]' };
 
   return (
-    <div className="card-glass p-4 hover:shadow-lg transition-all">
+    <div data-testid="book-card" className="card-glass p-4 hover:shadow-lg transition-all">
       <div className="flex gap-4">
         {/* Cover */}
         <div className="w-20 h-28 bg-[var(--brand-gradient-button)] rounded-[var(--radius-md)] overflow-hidden flex-shrink-0">

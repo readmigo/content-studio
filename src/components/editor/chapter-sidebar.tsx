@@ -47,7 +47,7 @@ export function ChapterSidebar({
   };
 
   return (
-    <div className="w-48 border-r flex flex-col bg-muted/30">
+    <div data-testid="chapter-sidebar" className="w-48 border-r flex flex-col bg-muted/30">
       <div className="p-3 border-b font-medium text-sm">
         章节列表
       </div>
