@@ -1,0 +1,184 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "loading": "Loading...",
+    "noData": "No data",
+    "error": "Error",
+    "success": "Success",
+    "all": "All",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "retry": "Retry",
+    "refresh": "Refresh"
+  },
+  "nav": {
+    "books": "Books",
+    "rules": "Rules",
+    "ruleMigration": "Rule Migration",
+    "learning": "Learning Report"
+  },
+  "env": {
+    "local": "Local",
+    "debug": "Debug",
+    "staging": "Staging",
+    "production": "Production",
+    "productionWarning": "You are in production environment. Be careful!"
+  },
+  "books": {
+    "title": "Books",
+    "searchPlaceholder": "Search books...",
+    "status": {
+      "pending": "Pending",
+      "autoFixed": "Auto-fixed",
+      "inReview": "In Review",
+      "approved": "Approved",
+      "published": "Published"
+    },
+    "progress": "Correction Progress",
+    "chapters": "Chapters",
+    "words": "Words",
+    "startCorrection": "Start Correction",
+    "continueCorrection": "Continue Correction"
+  },
+  "editor": {
+    "title": "Correction Editor",
+    "chapterList": "Chapters",
+    "fixList": "Fixes",
+    "htmlEditor": "HTML Editor",
+    "preview": "Preview",
+    "publishBook": "Publish Book",
+    "saveChanges": "Save Changes",
+    "fix": {
+      "autoApplied": "Auto-applied",
+      "pendingConfirm": "Pending Confirm",
+      "suggestion": "Suggestion",
+      "manual": "Manual Edit",
+      "confirmed": "Confirmed",
+      "reverted": "Reverted"
+    },
+    "action": {
+      "confirm": "Confirm",
+      "revert": "Revert",
+      "edit": "Edit",
+      "expand": "Expand Details"
+    },
+    "filter": {
+      "all": "All",
+      "autoApplied": "Auto-applied",
+      "pendingConfirm": "Pending Confirm",
+      "suggestion": "Suggestion"
+    },
+    "chapterStatus": {
+      "pending": "Pending",
+      "inProgress": "In Progress",
+      "completed": "Completed"
+    }
+  },
+  "preview": {
+    "title": "Phone Preview",
+    "theme": {
+      "light": "Light",
+      "sepia": "Sepia",
+      "dark": "Dark"
+    }
+  },
+  "rules": {
+    "title": "Rule Management",
+    "createRule": "Create Rule",
+    "searchPlaceholder": "Search rules...",
+    "source": {
+      "all": "All Sources",
+      "builtin": "Built-in",
+      "learned": "Learned",
+      "custom": "Custom"
+    },
+    "category": {
+      "all": "All Categories",
+      "cleanup": "Cleanup",
+      "formatting": "Formatting",
+      "structure": "Structure",
+      "style": "Style",
+      "content": "Content"
+    },
+    "action": {
+      "remove": "Remove",
+      "merge": "Merge",
+      "wrap": "Wrap",
+      "unwrap": "Unwrap",
+      "modify": "Modify",
+      "replace": "Replace"
+    },
+    "confidence": "Confidence",
+    "occurrences": "Applications",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "learnedFrom": "Learned from {count} books"
+  },
+  "migration": {
+    "title": "Rule Migration",
+    "sourceEnv": "Source Environment",
+    "targetEnv": "Target Environment",
+    "selectRules": "Select rules to migrate",
+    "export": "Export Rules",
+    "import": "Import Rules",
+    "selectAll": "Select All",
+    "deselectAll": "Deselect All",
+    "lowConfidenceWarning": "The following rules have low confidence and may need more validation:",
+    "productionApproval": "Production import requires admin approval",
+    "result": {
+      "success": "Migration successful",
+      "migrated": "Migrated {count} rules",
+      "failed": "Failed {count}",
+      "pending": "Pending approval"
+    }
+  },
+  "learning": {
+    "title": "Learning Report",
+    "stats": {
+      "totalPatterns": "Total Patterns",
+      "pendingPatterns": "Pending Review",
+      "approvedPatterns": "Approved",
+      "rejectedPatterns": "Rejected"
+    },
+    "pattern": {
+      "occurrences": "Occurs {count} times",
+      "books": "Found in {count} books",
+      "confidence": "Confidence: {value}%",
+      "samples": "Sample Preview"
+    },
+    "action": {
+      "approve": "Approve",
+      "reject": "Reject"
+    },
+    "status": {
+      "all": "All",
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    }
+  },
+  "dialog": {
+    "confirmPublish": {
+      "title": "Confirm Publish to Production",
+      "message": "You are about to publish the following book:",
+      "chapters": "{count} chapters",
+      "fixes": "{count} fixes",
+      "warning": "This will affect real user data. Type \"CONFIRM\" to proceed:",
+      "placeholder": "Type CONFIRM",
+      "cancel": "Cancel",
+      "confirm": "Confirm Publish"
+    },
+    "deleteRule": {
+      "title": "Confirm Delete Rule",
+      "message": "Are you sure you want to delete rule \"{name}\"? This action cannot be undone.",
+      "cancel": "Cancel",
+      "confirm": "Delete"
+    }
+  }
+}

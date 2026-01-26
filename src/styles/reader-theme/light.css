@@ -1,0 +1,13 @@
+/* Light theme */
+.reader-theme-light {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.reader-theme-light a {
+  color: #2563eb;
+}
+
+.reader-theme-light ::selection {
+  background-color: rgba(37, 99, 235, 0.2);
+}

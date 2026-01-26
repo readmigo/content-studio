@@ -1,0 +1,184 @@
+{
+  "common": {
+    "save": "保存",
+    "cancel": "取消",
+    "confirm": "确认",
+    "delete": "删除",
+    "edit": "编辑",
+    "search": "搜索",
+    "loading": "加载中...",
+    "noData": "暂无数据",
+    "error": "错误",
+    "success": "成功",
+    "all": "全部",
+    "back": "返回",
+    "next": "下一步",
+    "previous": "上一步",
+    "retry": "重试",
+    "refresh": "刷新"
+  },
+  "nav": {
+    "books": "书籍列表",
+    "rules": "规则管理",
+    "ruleMigration": "规则迁移",
+    "learning": "学习报告"
+  },
+  "env": {
+    "local": "本地环境",
+    "debug": "调试环境",
+    "staging": "预发布",
+    "production": "生产环境",
+    "productionWarning": "当前为生产环境，操作需谨慎！"
+  },
+  "books": {
+    "title": "书籍列表",
+    "searchPlaceholder": "搜索书籍...",
+    "status": {
+      "pending": "待处理",
+      "autoFixed": "已自动修复",
+      "inReview": "审核中",
+      "approved": "已批准",
+      "published": "已发布"
+    },
+    "progress": "校正进度",
+    "chapters": "章节",
+    "words": "字数",
+    "startCorrection": "开始校正",
+    "continueCorrection": "继续校正"
+  },
+  "editor": {
+    "title": "校正编辑器",
+    "chapterList": "章节列表",
+    "fixList": "修复列表",
+    "htmlEditor": "HTML编辑器",
+    "preview": "预览",
+    "publishBook": "发布书籍",
+    "saveChanges": "保存修改",
+    "fix": {
+      "autoApplied": "自动应用",
+      "pendingConfirm": "待确认",
+      "suggestion": "建议",
+      "manual": "手动修改",
+      "confirmed": "已确认",
+      "reverted": "已回滚"
+    },
+    "action": {
+      "confirm": "确认",
+      "revert": "回滚",
+      "edit": "编辑",
+      "expand": "展开详情"
+    },
+    "filter": {
+      "all": "全部",
+      "autoApplied": "自动应用",
+      "pendingConfirm": "待确认",
+      "suggestion": "建议"
+    },
+    "chapterStatus": {
+      "pending": "待处理",
+      "inProgress": "处理中",
+      "completed": "已完成"
+    }
+  },
+  "preview": {
+    "title": "手机预览",
+    "theme": {
+      "light": "亮色",
+      "sepia": "护眼",
+      "dark": "暗色"
+    }
+  },
+  "rules": {
+    "title": "规则管理",
+    "createRule": "新建规则",
+    "searchPlaceholder": "搜索规则...",
+    "source": {
+      "all": "全部来源",
+      "builtin": "内置规则",
+      "learned": "学习规则",
+      "custom": "自定义"
+    },
+    "category": {
+      "all": "全部类型",
+      "cleanup": "清理",
+      "formatting": "格式化",
+      "structure": "结构",
+      "style": "样式",
+      "content": "内容"
+    },
+    "action": {
+      "remove": "删除",
+      "merge": "合并",
+      "wrap": "包裹",
+      "unwrap": "解包",
+      "modify": "修改",
+      "replace": "替换"
+    },
+    "confidence": "置信度",
+    "occurrences": "应用次数",
+    "enabled": "已启用",
+    "disabled": "已禁用",
+    "learnedFrom": "学习自 {count} 本书"
+  },
+  "migration": {
+    "title": "规则迁移",
+    "sourceEnv": "源环境",
+    "targetEnv": "目标环境",
+    "selectRules": "选择要迁移的规则",
+    "export": "导出规则",
+    "import": "导入规则",
+    "selectAll": "全选",
+    "deselectAll": "取消全选",
+    "lowConfidenceWarning": "以下规则置信度较低，可能需要更多验证：",
+    "productionApproval": "生产环境导入需要管理员审批",
+    "result": {
+      "success": "迁移成功",
+      "migrated": "已迁移 {count} 条规则",
+      "failed": "失败 {count} 条",
+      "pending": "等待审批"
+    }
+  },
+  "learning": {
+    "title": "学习报告",
+    "stats": {
+      "totalPatterns": "总模式数",
+      "pendingPatterns": "待审核",
+      "approvedPatterns": "已批准",
+      "rejectedPatterns": "已拒绝"
+    },
+    "pattern": {
+      "occurrences": "出现 {count} 次",
+      "books": "涉及 {count} 本书",
+      "confidence": "置信度: {value}%",
+      "samples": "样本预览"
+    },
+    "action": {
+      "approve": "批准",
+      "reject": "拒绝"
+    },
+    "status": {
+      "all": "全部",
+      "pending": "待审核",
+      "approved": "已批准",
+      "rejected": "已拒绝"
+    }
+  },
+  "dialog": {
+    "confirmPublish": {
+      "title": "确认发布到生产环境",
+      "message": "你即将批准发布以下书籍：",
+      "chapters": "{count} 章节",
+      "fixes": "{count} 处修复",
+      "warning": "此操作将影响真实用户数据，请输入 \"CONFIRM\" 确认操作：",
+      "placeholder": "输入 CONFIRM",
+      "cancel": "取消",
+      "confirm": "确认发布"
+    },
+    "deleteRule": {
+      "title": "确认删除规则",
+      "message": "确定要删除规则 \"{name}\" 吗？此操作不可撤销。",
+      "cancel": "取消",
+      "confirm": "删除"
+    }
+  }
+}

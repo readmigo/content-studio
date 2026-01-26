@@ -1,0 +1,13 @@
+/* Sepia theme */
+.reader-theme-sepia {
+  background-color: #f4ecd8;
+  color: #5b4636;
+}
+
+.reader-theme-sepia a {
+  color: #8b5a2b;
+}
+
+.reader-theme-sepia ::selection {
+  background-color: rgba(139, 90, 43, 0.2);
+}
