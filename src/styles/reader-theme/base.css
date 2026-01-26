@@ -103,3 +103,145 @@
   margin-right: 0.1em;
   font-weight: bold;
 }
+
+/* ========================================
+   Front Matter - Elegant Styling
+   ======================================== */
+
+/* Dedication - centered, italic, elegant spacing */
+.reader-content [epub\:type="dedication"],
+.reader-content [role="doc-dedication"],
+.reader-content section.dedication {
+  text-align: center;
+  font-style: italic;
+  padding: 3em 2em;
+  margin: 2em 0;
+}
+
+.reader-content [epub\:type="dedication"] p,
+.reader-content [role="doc-dedication"] p,
+.reader-content section.dedication p {
+  text-indent: 0;
+  margin: 0.5em 0;
+  line-height: 2;
+}
+
+/* Epigraph - centered quotes with elegant citation */
+.reader-content [epub\:type="epigraph"],
+.reader-content [role="doc-epigraph"],
+.reader-content section.epigraph {
+  text-align: center;
+  padding: 2em 1.5em;
+  margin: 2em auto;
+  max-width: 85%;
+}
+
+.reader-content [epub\:type="epigraph"] blockquote,
+.reader-content [role="doc-epigraph"] blockquote,
+.reader-content section.epigraph blockquote {
+  border: none;
+  padding: 0;
+  margin: 1.5em 0;
+  font-style: italic;
+  opacity: 1;
+}
+
+.reader-content [epub\:type="epigraph"] blockquote p,
+.reader-content [role="doc-epigraph"] blockquote p,
+.reader-content section.epigraph blockquote p {
+  text-indent: 0;
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+.reader-content [epub\:type="epigraph"] cite,
+.reader-content [role="doc-epigraph"] cite,
+.reader-content section.epigraph cite {
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-size: 0.9em;
+  margin-top: 0.8em;
+  opacity: 0.7;
+}
+
+.reader-content [epub\:type="epigraph"] cite::before,
+.reader-content [role="doc-epigraph"] cite::before,
+.reader-content section.epigraph cite::before {
+  content: "— ";
+}
+
+/* Halftitlepage / Book title page */
+.reader-content [epub\:type="halftitlepage"],
+.reader-content section.halftitlepage {
+  text-align: center;
+  padding: 4em 2em;
+  margin: 2em 0;
+}
+
+.reader-content [epub\:type="halftitlepage"] p,
+.reader-content section.halftitlepage p {
+  text-indent: 0;
+  font-size: 1.5em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+/* Part / Book dividers (Book I, Book II, Part One, etc.) */
+.reader-content section[data-parent],
+.reader-content [epub\:type="part"],
+.reader-content [role="doc-part"] {
+  text-align: center;
+  padding: 3em 2em;
+  margin: 2em 0;
+}
+
+.reader-content section[data-parent] h2,
+.reader-content section[data-parent] h3,
+.reader-content [epub\:type="part"] h2,
+.reader-content [role="doc-part"] h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Decorative divider for part titles */
+.reader-content section[data-parent]::after,
+.reader-content [epub\:type="part"]::after {
+  content: "◆";
+  display: block;
+  margin-top: 1.5em;
+  font-size: 0.8em;
+  opacity: 0.4;
+}
+
+/* Preface, Foreword, Introduction */
+.reader-content [epub\:type="preface"],
+.reader-content [epub\:type="foreword"],
+.reader-content [epub\:type="introduction"],
+.reader-content [role="doc-preface"],
+.reader-content [role="doc-foreword"],
+.reader-content [role="doc-introduction"] {
+  /* Slightly different styling - still prose but marked */
+}
+
+.reader-content [epub\:type="preface"] > p:first-of-type,
+.reader-content [epub\:type="foreword"] > p:first-of-type,
+.reader-content [epub\:type="introduction"] > p:first-of-type {
+  text-indent: 0;
+}
+
+/* Prologue / Epilogue */
+.reader-content [epub\:type="prologue"],
+.reader-content [epub\:type="epilogue"],
+.reader-content [role="doc-prologue"],
+.reader-content [role="doc-epilogue"] {
+  /* Standard chapter styling with first paragraph no indent */
+}
+
+.reader-content [epub\:type="prologue"] > p:first-of-type,
+.reader-content [epub\:type="epilogue"] > p:first-of-type {
+  text-indent: 0;
+}
