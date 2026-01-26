@@ -75,6 +75,9 @@ export const ENVIRONMENTS: Record<EnvironmentName, EnvironmentConfig> = {
 };
 
 export function getDefaultEnvironment(): EnvironmentName {
+  // In development mode, always default to local unless explicitly overridden
+  const isDevelopment = process.env.NODE_ENV === 'development';
+
   const envFromUrl = typeof window !== 'undefined'
     ? new URLSearchParams(window.location.search).get('env')
     : null;
@@ -86,6 +89,11 @@ export function getDefaultEnvironment(): EnvironmentName {
   const envFromProcess = process.env.NEXT_PUBLIC_DEFAULT_ENV;
   if (envFromProcess && isValidEnvironment(envFromProcess)) {
     return envFromProcess as EnvironmentName;
+  }
+
+  // Force local environment in development mode
+  if (isDevelopment) {
+    return 'local';
   }
 
   return 'local';

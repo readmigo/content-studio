@@ -15,6 +15,9 @@ interface EnvState {
   requiresConfirmation: () => boolean;
 }
 
+// Check if we're in development mode
+const isDevelopment = process.env.NODE_ENV === 'development';
+
 export const useEnvStore = create<EnvState>()(
   persist(
     (set, get) => ({
@@ -35,10 +38,26 @@ export const useEnvStore = create<EnvState>()(
     {
       name: 'content-studio-env',
       partialize: (state) => ({ currentEnv: state.currentEnv }),
-      onRehydrateStorage: () => (state) => {
-        if (state) {
-          state.config = getEnvironmentConfig(state.currentEnv);
+      // Use merge to properly intercept rehydration and force local env in development
+      merge: (persistedState, currentState) => {
+        const persisted = persistedState as Partial<EnvState> | undefined;
+
+        // In development mode, always use local environment regardless of localStorage
+        if (isDevelopment) {
+          return {
+            ...currentState,
+            currentEnv: 'local' as EnvironmentName,
+            config: getEnvironmentConfig('local'),
+          };
         }
+
+        // In production/staging builds, respect persisted environment
+        const envToUse = persisted?.currentEnv || currentState.currentEnv;
+        return {
+          ...currentState,
+          currentEnv: envToUse,
+          config: getEnvironmentConfig(envToUse),
+        };
       },
     }
   )
