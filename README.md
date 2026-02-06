@@ -1,5 +1,7 @@
 # Readmigo Content Studio
 
+[![CI](https://github.com/readmigo/content-studio/actions/workflows/ci.yml/badge.svg)](https://github.com/readmigo/content-studio/actions/workflows/ci.yml)
+
 Internal tool for book content editing, proofreading, and preview.
 
 ## Tech Stack
