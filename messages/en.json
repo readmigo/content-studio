@@ -32,7 +32,9 @@
   },
   "books": {
     "title": "Books",
-    "searchPlaceholder": "Search books...",
+    "search": {
+      "placeholder": "Search books..."
+    },
     "status": {
       "pending": "Pending",
       "autoFixed": "Auto-fixed",
@@ -91,7 +93,9 @@
   "rules": {
     "title": "Rule Management",
     "createRule": "Create Rule",
-    "searchPlaceholder": "Search rules...",
+    "search": {
+      "placeholder": "Search rules..."
+    },
     "source": {
       "all": "All Sources",
       "builtin": "Built-in",

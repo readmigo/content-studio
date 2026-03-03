@@ -32,7 +32,9 @@
   },
   "books": {
     "title": "书籍列表",
-    "searchPlaceholder": "搜索书籍...",
+    "search": {
+      "placeholder": "搜索书籍..."
+    },
     "status": {
       "pending": "待处理",
       "autoFixed": "已自动修复",
@@ -91,7 +93,9 @@
   "rules": {
     "title": "规则管理",
     "createRule": "新建规则",
-    "searchPlaceholder": "搜索规则...",
+    "search": {
+      "placeholder": "搜索规则..."
+    },
     "source": {
       "all": "全部来源",
       "builtin": "内置规则",
